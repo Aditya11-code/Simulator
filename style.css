@@ -132,12 +132,12 @@ h4{
 	border: 2px solid rgba(98 , 174 , 238 , 0.7);
 }
 .a{
-	animation: down 2s;
+	animation: down 1s;
 	animation-fill-mode: forwards;
 }
 .b{
 	margin-top: 15%;
-	animation: up 2s;
+	animation: up 1s;
 	animation-fill-mode: forwards;
 }
 .c{
