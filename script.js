@@ -76,7 +76,7 @@ function hightlight(){
 		if(id[count]=='nine'){
 			if(countnine > 1){
 				var cont = document.querySelector(".cont");
-				cont.innerHTML += '<div class="some" style = "width:'+width+'%"> 	<div class="a">'+array[countnine - 2]+'</div>	<div class="b">'+array[countnine -1]+'</div><div class="c cee">'+array[countnine]+'</div>	</div>';
+				cont.innerHTML += '<div class="some" style = "width:'+width+'%"> 	<div class="a"><b>'+array[countnine - 2]+'</b></div>	<div class="b"><b>'+array[countnine -1]+'</b></div><div class="c cee"><b>'+array[countnine]+'</b></div>	</div>';
 				setTimeout(function (){
 					document.querySelector(".a").remove();
 					document.querySelector(".b").remove();
@@ -86,7 +86,7 @@ function hightlight(){
 		  }
 			else{
 				var cont = document.querySelector(".cont");
-				cont.innerHTML += '<div class="some" style = "width:'+width+'%"> <div class="c cee">'+array[countnine]+'</div>	</div>';
+				cont.innerHTML += '<div class="some" style = "width:'+width+'%"> <div class="c cee"><b>'+array[countnine]+'</b></div>	</div>';
 				setTimeout(function (){
 					document.querySelector(".cee").style.visibility = "visible";
 					document.querySelector(".cee").classList.remove("cee");
