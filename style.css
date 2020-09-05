@@ -128,6 +128,8 @@ h4{
 	text-align: center;
 	border: 1px solid rgb(0,0,0);
 	margin-left: 20px;
+	background-color: rgba(98 , 174 , 238 , 0.2);
+	border: 2px solid rgba(98 , 174 , 238 , 0.7);
 }
 .a{
 	animation: down 1s;
@@ -151,7 +153,6 @@ h4{
 	text-align: center;
 	padding-top: 15px;
 	background-color: rgba(98 , 174 , 238 , 0.2);
-	font-weight: 500;
 }
 #res{
 	display: none;
