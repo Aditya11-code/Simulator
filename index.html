@@ -22,13 +22,13 @@
 		<div class="division">
 			<div class="heading">Step Execution</div>
 			<div id="code">
-				<div id="one">function fib(n) {</div>
-				<div id="two">if (n == 0)
+				<div id="one">int fib(n) {</div>
+				<div id="two">if (n <= 1)
 					<br>
-					<span class="else">return 0;</span>
+					<span class="else">return n;</span>
 				</div>
 				<div id="three">
-					else if (n == 1 || n == 2)
+					else if (n == 2)
 					<br>
 					<span class="else">return 1;</span>
 				</div>
@@ -38,11 +38,13 @@
 					<span class="else">return fib(n-2) + fib(n-1);</span>
 				</div>
 				}
-				<div id="five">function main() {</div>
-				<div id="six">var i, array[], ele</div>
-				<div id="seven">for( i=0 ; i <= num ; i++ ) {</div>
+				<div id="five">void main() {</div>
+				<div id="six">int num;
+					scanf("%d",&num);
+					int array[num], ele;</div>
+				<div id="seven">for( int i=1 ; i <= num ; i++ ) {</div>
 				<div id="eight">ele = fib(i);</div>
-				<div id="nine">array.push(ele);</div>
+				<div id="nine">array[i-1]=ele;</div>
 				<span id="ten">}</span>
 				<br>
 				<span id="eleven">}</span>
