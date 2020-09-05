@@ -19,6 +19,7 @@
 }
 #code{
 	visibility: hidden;
+	font-weight: 500;
 }
 .container{
 	display: flex;
@@ -140,12 +141,14 @@ h4{
 	left: 0;
 	margin-left:20px;
 	margin-top: 20%;
-	border: 2px solid black;
+	border: 2px solid rgba(98 , 174 , 238 , 0.7);
 	width: 50px;
 	height: 40px;
 	visibility: hidden;
 	text-align: center;
 	padding-top: 15px;
+	background-color: rgba(98 , 174 , 238 , 0.2);
+	font-weight: 500;
 }
 #res{
 	display: none;
