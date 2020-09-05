@@ -52,20 +52,6 @@ function main(){
 	}
 	id.push("eleven");
 }
-function resetE(){
-	if(confirm("Are you sure you want to reset?")){
-		document.getElementById('number').value="";
-		document.getElementById('code').style.visibility='hidden';
-		//document.getElementById('result').innerHTML="";
-		document.querySelector(".cont").innerHTML = " ";
-		document.getElementById('res').innerHTML="";
-		document.getElementById('start').disabled = false;
-		document.getElementById('next').disabled = true;
-		document.getElementById('start').style.backgroundColor = "#0D85C9";
-		document.getElementById('next').style.backgroundColor = "#d6d6d6";
-
-	}
-}
 var count=0, id=[], countnine=0;
 function hightlight(){
 	for(var i=0;i<id.length;i++){
