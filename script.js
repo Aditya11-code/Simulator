@@ -68,7 +68,8 @@ function hightlight(){
 					document.querySelector(".b").remove();
 					document.querySelector(".cee").style.visibility = "visible";
 					document.querySelector(".cee").classList.remove("cee");
-				},1000);
+					document.getElementById("next").removeEventListener("onClick", highlight());
+				},2000);
 		  }
 			else{
 				var cont = document.querySelector(".cont");
@@ -76,7 +77,8 @@ function hightlight(){
 				setTimeout(function (){
 					document.querySelector(".cee").style.visibility = "visible";
 					document.querySelector(".cee").classList.remove("cee");
-				},1000);
+					document.getElementById("next").removeEventListener("onClick", highlight());
+				},2000);
 
 			}
 		document.getElementById('res').innerHTML += array[countnine++];
