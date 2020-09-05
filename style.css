@@ -1,0 +1,170 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.head, .heading{
+	background-image: linear-gradient(#599bdc, #3072b3);
+	color: #fff;
+	text-align: center;
+}
+.head{
+	padding: 15px 0px;
+	font-size: 24px;
+}
+.heading{
+	padding: 8px 0px;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+}
+#code{
+	visibility: hidden;
+}
+.container{
+	display: flex;
+	margin: 0% 2% 0% 2%;
+}
+.division{
+	width: 35%;
+	border:1px solid grey;
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+	border-radius: 5px;
+	margin: 1% 4% 0% 8%;
+}
+.ot{
+	border:1px solid grey;
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+	border-radius: 5px;
+	margin: 0% 11% 0% 9.5%;
+	min-height: 30vh;
+}
+.div1{
+	text-align: center;
+}
+h4{
+	text-align: center;
+	margin: 4% 0%;
+	font-size: 18px;
+	letter-spacing: 0.2px;
+}
+#number{
+	width: 60%;
+	padding: 10px 15px;
+	outline: none;
+	border: 1px solid rgb(200,200,200);
+	border-radius: 10px;
+	margin-bottom: 3%;
+}
+#start , #next , #reset{
+	font-weight: 500;
+	color:#fff;
+	width: 50%;
+	padding: 8px 10px;
+	margin: 1% 2%;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 14px;
+	letter-spacing: 0.3px;
+	transition: all 0.2s;
+}
+#start{
+	background-color: #0D85C9;
+}
+#start:hover{
+	background-color: #0970AB;
+}
+#next{
+	background-color: #d6d6d6 ;
+}
+.active:hover{
+	background-color: #0C833E;
+}
+#reset{
+	background-color: #B03A2E ;
+}
+#reset:hover{
+	background-color: #96180C;
+}
+#result , #res{
+	margin: 4% 10%;
+}
+#res{
+	padding: 0px 2px;
+	font-weight: 600;
+}
+#code{
+	margin: 4% 10%;
+}
+#code div{
+	padding: 1px 0px;
+	font-weight: 500;
+}
+#two , #three , #four , #six , #seven , #ten{
+	margin-left: 5%;
+}
+#eight , #nine{
+	margin-left: 10%;
+}
+.else{
+	margin-left: 15%;
+}
+.cont{
+	display: flex;
+}
+.some{
+	position: relative;
+}
+.a , .b{
+	height: 50px;
+	width: 50px;
+	position: relative;
+	text-align: center;
+	border: 1px solid rgb(0,0,0);
+	margin-left: 20px;
+}
+.a{
+	animation: down 1s;
+	animation-fill-mode: forwards;
+}
+.b{
+	margin-top: 15%;
+	animation: up 1s;
+	animation-fill-mode: forwards;
+}
+.c{
+	position:absolute;
+	top: 0;
+	left: 0;
+	margin-left:20px;
+	margin-top: 20%;
+	border: 2px solid black;
+	width: 50px;
+	height: 40px;
+	visibility: hidden;
+	text-align: center;
+	padding-top: 15px;
+}
+#res{
+	display: none;
+}
+@keyframes down {
+	from{
+		top: 0px;
+	}
+	to{
+		top:42px;
+		visibility: hidden;
+	}
+}
+@keyframes up {
+	from{
+		bottom: 0px;
+	}
+	to{
+		bottom:42px;
+		visibility: hidden;
+	}
+}
