@@ -21,26 +21,70 @@
 	visibility: hidden;
 	font-weight: 500;
 }
+.formula{
+	margin: 1% 7%;
+}
+.for-cont{
+	font-size: 25px;
+	letter-spacing: 0.5px;
+	background-color: #9E0815;
+	border-radius: 10px;
+	opacity: 0.9;
+	font-weight: 600;
+	color: #fff;
+	padding: 10px;
+	cursor: pointer;
+}
+.for-cont:hover{
+	opacity: 1;
+}
+.form{
+	display: none;
+	border: 1px solid black;
+	margin: 0% 25%;
+	padding: 15px 0px;
+	text-align: center;
+	margin-top: 1%;
+	font-weight: 600;
+	font-size: 30px;
+}
 .container{
 	display: flex;
 	margin: 0% 2% 0% 2%;
 }
-.division{
+.div1{
 	width: 35%;
 	border:1px solid grey;
 	box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
 	border-radius: 5px;
-	margin: 1% 4% 0% 8%;
+	margin: 1% 1% 0% 5%;
+	text-align: center;
+}
+.nab{
+	visibility: hidden;
+	width: 20%;
+	margin: 1%;
+	margin-bottom: 0%;
+	padding-top: 4%;
+	font-size: 30px;
+}
+.nab > h2{
+	margin: 5% 15% 0% 15%;
+	padding-top: 1%;
+}
+.div2{
+	width: 35%;
+	border:1px solid grey;
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+	border-radius: 5px;
+	margin: 1% 4% 0% 1%;
 }
 .ot{
 	border:1px solid grey;
 	box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
 	border-radius: 5px;
-	margin: 0% 11% 0% 9.5%;
+	margin: 0% 6% 0% 7%;
 	min-height: 30vh;
-}
-.div1{
-	text-align: center;
 }
 h4{
 	text-align: center;
@@ -117,13 +161,15 @@ h4{
 }
 .some{
 	position: relative;
+	min-height: 30vh;
+	border: 1px solid red;
 }
 .a , .b{
 	height: 50px;
-	width: 50px;
+	width: 30%;
 	position: relative;
 	text-align: center;
-	margin-left: 20px;
+	margin-left: 35%;
 	border: 2px solid rgba(98 , 174 , 238 , 0.7);
 	background-color: rgba(98 , 174 , 238 , 0.2);
 }
@@ -140,10 +186,10 @@ h4{
 	position:absolute;
 	top: 0;
 	left: 0;
-	margin-left:20px;
-	margin-top: 20%;
+	margin-left:35%;
+	margin-top: 60px;
 	border: 2px solid rgba(98 , 174 , 238 , 0.7);
-	width: 50px;
+	width: 30%;
 	height: 40px;
 	visibility: hidden;
 	text-align: center;
@@ -154,12 +200,35 @@ h4{
 #res{
 	display: none;
 }
+.fib{
+	text-align: center;
+	font-size: 18px;
+	border-bottom:1px solid red;
+}
+@keyframes downnine {
+	from{
+		top: 0px;
+	}
+	to{
+		top:38px;
+		visibility: hidden;
+	}
+}
+@keyframes upnine {
+	from{
+		bottom: 0px;
+	}
+	to{
+		bottom:38px;
+		visibility: hidden;
+	}
+}
 @keyframes down {
 	from{
 		top: 0px;
 	}
 	to{
-		top:42px;
+		top:46px;
 		visibility: hidden;
 	}
 }
@@ -168,7 +237,25 @@ h4{
 		bottom: 0px;
 	}
 	to{
-		bottom:42px;
+		bottom:46px;
+		visibility: hidden;
+	}
+}
+@keyframes downfif {
+	from{
+		top: 0px;
+	}
+	to{
+		top:33px;
+		visibility: hidden;
+	}
+}
+@keyframes upfif {
+	from{
+		bottom: 0px;
+	}
+	to{
+		bottom:33px;
 		visibility: hidden;
 	}
 }
