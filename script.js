@@ -62,24 +62,31 @@ function hightlight(){
 		if(id[count]=='nine'){
 			if(countnine > 1){
 				var cont = document.querySelector(".cont");
+				document.getElementById("next").disabled = true;
+			//	document.getElementById("next").style.backgroundColor = "#d6d6d6";
 				cont.innerHTML += '<div class="some" style = "width:'+width+'%"> 	<div class="a"><b>'+array[countnine - 2]+'</b></div>	<div class="b"><b>'+array[countnine -1]+'</b></div><div class="c cee"><b>'+array[countnine]+'</b></div>	</div>';
 				setTimeout(function (){
 					document.querySelector(".a").remove();
 					document.querySelector(".b").remove();
 					document.querySelector(".cee").style.visibility = "visible";
 					document.querySelector(".cee").classList.remove("cee");
-					document.getElementById("next").removeEventListener("onClick", highlight());
-				},2000);
+					document.getElementById("next").disabled = false;
+				//	document.getElementById("next").style.backgroundColor = "#229954";
+
+			},1000);
+
 		  }
 			else{
 				var cont = document.querySelector(".cont");
+				document.getElementById("next").disabled = true;
+				//document.getElementById("next").style.backgroundColor = "#d6d6d6";
 				cont.innerHTML += '<div class="some" style = "width:'+width+'%"> <div class="c cee"><b>'+array[countnine]+'</b></div>	</div>';
 				setTimeout(function (){
+					document.getElementById("next").disabled = false;
+				//	document.getElementById("next").style.backgroundColor = "#229954";
 					document.querySelector(".cee").style.visibility = "visible";
 					document.querySelector(".cee").classList.remove("cee");
-					document.getElementById("next").removeEventListener("onClick", highlight());
-				},2000);
-
+				},1000);
 			}
 		document.getElementById('res').innerHTML += array[countnine++];
 	}
