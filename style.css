@@ -104,13 +104,16 @@ h4{
 	font-weight: 500;
 }
 #two , #three , #four , #six , #seven , #ten{
+	font-weight : 500;
 	margin-left: 5%;
 }
 #eight , #nine{
+	font-weight : 500;
 	margin-left: 10%;
 }
 .else{
 	margin-left: 15%;
+	font-weight : 500;
 }
 .cont{
 	display: flex;
