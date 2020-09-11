@@ -8,8 +8,6 @@ function startCode(){
 		document.getElementById('code').style.visibility='visible';
 		document.getElementById('start').disabled = true;
 		document.getElementById('next').disabled = false;
-		document.getElementById("shw-n").innerHTML = num;
-		document.querySelector(".nab").style.visibility = "visible";
 		document.getElementById('next').style.backgroundColor ="#229954";
 			document.getElementById('start').style.backgroundColor ="#d6d6d6";
 		main();
@@ -62,15 +60,19 @@ function hightlight(){
 	}
 	if(count<id.length){
 		document.getElementById(id[count]).style.color = 'red';
+		if(id[count]=='six'){
+			document.getElementById("shw-n").innerHTML = num;
+			document.querySelector(".nab").style.visibility = "visible";
+		}
 		if(id[count]=='nine'){
 			if(countnine > 1){
 				var cont = document.querySelector(".cont");
 				document.getElementById("next").disabled = true;
 			//	document.getElementById("next").style.backgroundColor = "#d6d6d6";
-				cont.innerHTML += '<div class="some" style = "width:'+width+'%"><div class="fib">Fib('+(countnine+1)+')</div><div class="a"><b>'+array[countnine - 2]+'</b></div>	<div class="b"><b>'+array[countnine -1]+'</b></div><div class="c cee"><b>'+array[countnine]+'</b></div>	</div>';
-				document.getElementById("shw-n").innerHTML = num;
-				document.getElementById("shw-a").innerHTML = array[countnine - 2];
-				document.getElementById("shw-b").innerHTML = array[countnine - 1];
+				cont.innerHTML += '<div class="some" style = "width:'+width+'%"><div class="fib">Fib('+(countnine+1)+')</div><div class="a"><b>fib('+(countnine - 1)+')</b></div>	<div class="b"><b>fib('+(countnine)+')</b></div><div class="c cee"><b>'+array[countnine]+'</b></div>	</div>';
+
+				document.getElementById("shw-a").innerHTML = "fib("+(countnine - 1)+") = "+ array[countnine - 2];
+				document.getElementById("shw-b").innerHTML = "fib("+(countnine)+") = "+ array[countnine - 1];
 				if(num <= 6){
 					document.querySelector(".a").style.animation = "down 1s";
 					document.querySelector(".b").style.animation = "up 1s";
@@ -96,6 +98,14 @@ function hightlight(){
 			else{
 				var cont = document.querySelector(".cont");
 				document.getElementById("next").disabled = true;
+				if(countnine==0){
+					document.getElementById("sa").style.display='block';
+					document.getElementById("shw-a").innerHTML = "fib("+(countnine + 1) +") = "+ array[countnine];
+				}
+				else{
+					document.getElementById("sb").style.display='block';
+					document.getElementById("shw-b").innerHTML = "fib("+(countnine + 1 )+") = "+ array[countnine];
+				}
 				//document.getElementById("next").style.backgroundColor = "#d6d6d6";
 				cont.innerHTML += '<div class="some" style = "width:'+width+'%"><div class="fib">Fib('+(countnine+1)+')</div>  <div class="c cee"><b>'+array[countnine]+'</b></div>	</div>';
 				setTimeout(function (){
